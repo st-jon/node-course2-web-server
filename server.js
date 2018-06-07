@@ -49,9 +49,10 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/bad', (req, res) => {
-    res.send({
-        error: 'this is an Error'
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        message: 'this is my portfolio'
     })
 })
 
